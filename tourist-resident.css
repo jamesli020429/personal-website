@@ -1,0 +1,7 @@
+.tourist-resident-page .project-intro h1 { text-transform:uppercase; }
+.tourist-resident-page .article-link { font-size:14px; margin:20px 0 0; }
+.tourist-resident-page .article-link a { text-decoration:underline; text-underline-offset:4px; }
+.tourist-resident-page .article-link span { display:block; margin-top:7px; color:#666; }
+.tourist-resident-page .section-summary { max-width:850px; margin-bottom:28px; }
+.tourist-resident-page .source-figure { margin-bottom:0; }
+.tourist-resident-page .source-section:first-of-type .source-figure { max-width:900px; margin:auto; }

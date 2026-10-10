@@ -1,0 +1,7 @@
+.hub-analysis, .hub-comparisons { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 32px; }
+.hub-analysis .source-figure { max-width: 150px; margin-top: 24px; }
+.hub-station-drawings { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.hub-sidewalk { max-width: 680px; margin: 0 auto 36px; }
+@media(max-width:640px) {
+ .hub-analysis, .hub-comparisons, .hub-station-drawings { grid-template-columns: 1fr; gap: 24px; }
+}

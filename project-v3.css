@@ -1,0 +1,62 @@
+/* Shared type and alignment from the preliminary project page. */
+@import url("project-v2.css");
+.concept-pair { padding: 12px 0 0; }
+.project-section-title { font-size: 24px; font-weight: 700; line-height: 1.3; margin: 0 0 26px; }
+.project-page .image-name { font-weight: 300; font-style: italic; font-variation-settings: "wdth" var(--acumin-width), "slnt" -12; }
+.research-scroll { overflow-x: auto; margin: 36px 0; }
+.infographics-row { display: grid; grid-template-columns: 1fr 1fr 1.2fr; gap: 22px; align-items: start; min-width: 760px; }
+.infographics-row img { width: 100%; height: auto; object-fit: contain; }
+.research-text > .image-name:first-child { margin-top: 0; }
+.research-text h2 { margin-top: 24px; }
+.infographics-row .source-figure { margin-bottom: 16px; }
+.process { margin: 28px 0 56px; }
+.modular-workbench { display: grid; grid-template-columns: 1.45fr 1fr; gap: 36px; align-items: start; margin: 28px 0 56px; }
+.modular-workbench > * { min-width: 0; }
+.modular-workbench .process { margin: 0; }
+.detail-navigation { display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; align-items: center; border-bottom: 1px solid var(--line); min-height: 54px; margin-bottom: 28px; }
+.detail-navigation button { background: transparent; border: 0; min-height: 52px; font-size: 20px; font-weight: 400; cursor: pointer; }
+.detail-navigation button:hover { background: #f3f3f3; }
+.detail-title { margin: 0; text-align: center; font-size: 16px; line-height: 1.3; font-weight: 700; }
+.detail-slide[hidden] { display: none; }
+.detail-slides { min-height: 325px; }
+.detail-slide { margin: 0; }
+.detail-slide img { width: 100%; height: auto; }
+.process-tabs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-bottom: 1px solid var(--line); margin-bottom: 28px; }
+.process-tabs button { background: transparent; border: 0; border-bottom: 2px solid transparent; padding: 14px 4px; font-size: 16px; font-weight: 400; cursor: pointer; }
+.process-tabs button[aria-selected="true"] { border-bottom-color: var(--ink); font-weight: 700; background: #f3f3f3; }
+.process-panel { max-width: 560px; margin: 0 auto; min-height: 325px; }
+.process-panel .source-figure { margin: 0; }
+.process-panel[hidden], .iteration-panel[hidden] { display: none; }
+.detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px; max-width: 760px; margin: 28px auto 56px; }
+.detail-grid .source-figure { margin: 0; }
+.iterations { display: grid; grid-template-columns: minmax(0, 150px) minmax(0, 1fr); gap: 32px; align-items: stretch; margin: 28px 0; }
+.iteration-tabs { display: grid; grid-template-rows: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 0; }
+.iteration-tabs button { background: white; padding: 12px; border: 1px solid var(--line); border-bottom: 3px solid transparent; cursor: pointer; }
+.iteration-tabs button img { width: 100%; height: 100%; max-height: 140px; object-fit: contain; display: block; }
+.iteration-tabs button[aria-selected="true"] { border-color: #95a98e; border-bottom-color: #506348; background: #f4f6f2; }
+.iteration-tabs button:hover { border-color: #506348; }
+.iteration-panel { min-width: 0; max-width: none; margin: 0; }
+.iteration-panel .source-figure { margin: 0; height: 100%; }
+.iteration-panel .source-figure a { display: flex; align-items: center; height: 100%; }
+.iteration-panel img { width: 100%; height: auto; }
+.original-page .source-figure { margin-bottom: 0; }
+.site-location-row { display: grid; grid-template-columns: 1.6fr 1fr; gap: 36px; align-items: start; }
+.site-access { max-width: 720px; margin: 40px auto 56px; }
+.site-legend-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px 28px; align-items: start; }
+.site-legend-grid .source-figure { margin: 0; }
+.site-drawing-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px; align-items: start; }
+.working-models > .image-description { max-width: 680px; }
+.working-models .model-grid { align-items: start; }
+.research-text h2:first-child { margin-top: 0; }
+@media(max-width:640px) {
+  .site-location-row, .site-drawing-pair { grid-template-columns: 1fr; gap: 20px; }
+  .site-legend-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .modular-workbench { grid-template-columns: 1fr; gap: 32px; }
+  .detail-slides { min-height: 0; }
+  .process-panel { min-height: 54vw; }
+  .infographics-row { gap: 16px; }
+  .iteration-tabs { gap: 10px; }
+  .iterations { grid-template-columns: minmax(0, 76px) minmax(0, 1fr); gap: 14px; }
+  .iteration-tabs button { padding: 5px; }
+  .detail-grid { gap: 18px; }
+}

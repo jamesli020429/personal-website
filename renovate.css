@@ -1,0 +1,9 @@
+html:has(body.renovate-dark) { background:#1c1c1c; color-scheme:dark; }
+body.renovate-dark { --ink:#fff; --paper:#1c1c1c; --muted:#fff; --line:#383838; background:#1c1c1c; color:#fff; }
+.renovate-dark .topbar, .renovate-dark footer { background:#1c1c1c; color:#fff; }
+.renovate-dark a, .renovate-dark .intro-copy, .renovate-dark .cv-pending, .renovate-dark .cv-pending small { color:#fff; }
+.renovate-dark a:focus-visible { outline:2px solid #fff; outline-offset:5px; }
+.renovate-context { display:grid; grid-template-columns:1.15fr 1fr; gap:40px; align-items:start; }
+.renovate-context > div > figure { max-width:280px; }
+.renovate-workflow { max-width:720px; margin:auto; }
+@media(max-width:640px) { .renovate-context { grid-template-columns:1fr; gap:20px; } }

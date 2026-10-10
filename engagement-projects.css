@@ -1,0 +1,11 @@
+.engagement-project .project-intro h1 { text-transform:uppercase; }
+.engagement-copy { max-width:820px; margin-bottom:28px; }
+.engagement-pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px; align-items:start; }
+.engagement-pair .source-figure { min-width:0; }
+.engagement-project figcaption { margin-top:12px; }
+.event-photos { grid-template-columns:.7fr 1.3fr; }
+.brochure-actions { display:flex; gap:24px; flex-wrap:wrap; font-size:16px; margin:0 0 28px; }
+.brochure-actions a { text-decoration:underline; text-underline-offset:5px; }
+.brochure-pages .source-figure { margin-bottom:36px; }
+.brochure-pages img { border:1px solid #eee; }
+@media(max-width:640px) { .engagement-pair, .event-photos { grid-template-columns:1fr; gap:8px; } }

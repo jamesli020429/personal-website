@@ -1,0 +1,13 @@
+/* About and contact share the homepage column and Acumin type. */
+.contact-page { padding-bottom: 64px; }
+.contact-page .project-intro { padding-bottom: 48px; }
+.contact-row { display: grid; grid-template-columns: 1fr 2.5fr; gap: 40px; padding: 42px 0; border-top: 1px solid var(--line); }
+.contact-row h2 { margin: 4px 0 0; font-size: 14px; font-weight: 400; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.contact-copy { font-size: 21px; font-weight: 400; line-height: 1.65; }
+.contact-copy p { margin: 0 0 20px; }
+.contact-copy p:last-child { margin-bottom: 0; }
+.contact-copy strong { font-weight: 700; }
+.contact-links { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; font-size: 22px; font-weight: 700; }
+.contact-links a { overflow-wrap: anywhere; }
+.contact-links span { font-size: 14px; color: var(--muted); margin-left: 8px; font-weight: 400; }
+@media (max-width: 640px) { .contact-row { grid-template-columns: 1fr; gap: 20px; padding: 30px 0; } .contact-copy { font-size: 19px; } .contact-links { font-size: 20px; } }

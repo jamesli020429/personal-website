@@ -1,0 +1,79 @@
+/* Adobe Fonts kit enr0gip supplies acumin-variable on every page.
+   Verified axes: wght 100–900, wdth 50–115, slnt -12–0.
+   Width and slant are explicit because the kit declares normal stretch/style.
+   Weight follows font-weight; no synthetic bold or italic is needed. */
+:root {
+  --font-family: "acumin-variable", "Arial Narrow", "Helvetica Neue", sans-serif;
+  --font-width: 75%;
+  --acumin-width: 75;
+  --weight-black: 900;
+  --weight-bold: 700;
+  --weight-regular: 400;
+  --weight-thin: 100;
+}
+
+/* Main text — Thin Condensed. All levels inherit the condensed width. */
+body {
+  font-family: var(--font-family);
+  font-stretch: var(--font-width);
+  font-variation-settings: "wdth" var(--acumin-width), "slnt" 0;
+  font-synthesis: none;
+  font-weight: var(--weight-thin);
+  font-style: normal;
+}
+
+/* Main header — Black Condensed. */
+.hero h1,
+.type-main-header {
+  font-weight: var(--weight-black);
+  font-style: normal;
+  letter-spacing: -.025em;
+}
+
+/* Header 1 — Bold Condensed: section and project titles. */
+.section-heading h2,
+.card-caption h3,
+.empty-page h1,
+.engagement-link,
+.wordmark,
+.type-header-1 {
+  font-weight: var(--weight-bold);
+  font-style: normal;
+  letter-spacing: -.015em;
+}
+
+/* Header 2 — Italic Condensed: section and project one-liners. */
+.slogan,
+.about h2,
+.section-heading p,
+.card-caption p,
+.engagement > div > span:first-child,
+.type-header-2 {
+  font-weight: var(--weight-regular);
+  font-style: italic;
+  font-variation-settings: "wdth" var(--acumin-width), "slnt" -12;
+  letter-spacing: normal;
+}
+
+/* Header 3 — Regular Condensed: text subtitles and navigation labels. */
+.prose h2,
+.prose h3,
+.prose h4,
+.section-label,
+.hero-top,
+nav,
+.about-index,
+.explore,
+.empty-page > a,
+footer,
+.type-header-3 {
+  font-weight: var(--weight-regular);
+  font-style: normal;
+}
+
+.prose,
+.bio,
+.type-main-text {
+  font-weight: var(--weight-thin);
+  font-style: normal;
+}
