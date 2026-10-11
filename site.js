@@ -52,8 +52,8 @@ const designProjects = [
 ];
 const researchProjects = [
   { title: 'Renovate it yourself!', slug: 'renovate-it-yourself', image: 'renovate/participation.webp', category: 'Generative-AI-based Housing Renovation Experiment' },
-  { title: 'Fast Tracking Affordable Housing Development in NYC', ongoing: true, slug: 'fast-track-nyc-housing', image: 'research-4' },
-  { title: 'Blue Tents', slug: 'blue-tents', image: 'research-3' },
+  { title: 'Fast Tracking Affordable Housing Development in NYC', ongoing: true, hidden: true, slug: 'fast-track-nyc-housing', image: 'research-4' },
+  { title: 'Blue Tents', slug: 'blue-tents', image: 'blue-tents/cover.webp', category: 'Research on Temporary Housing in Tibet' },
   { title: 'Urban Perception: Tourist vs Resident', slug: 'tourists-vs-residents', image: 'tourist-resident/semantic-analysis.webp', category: 'Multimodal Social Sensing' },
 ].map(project => ({ category: 'Housing + Urban Research', ...project, group: 'empower' }));
 function renderProjects(containerId, projects) {
@@ -116,7 +116,7 @@ function projectRank(project) {
   return rank < 0 ? projectOrder.length : rank;
 }
 orderedProjects.sort((a, b) => projectRank(a) - projectRank(b));
-renderProjects('all-projects', orderedProjects);
+renderProjects('all-projects', orderedProjects.filter(project => !project.hidden));
 const filters = [...document.querySelectorAll('[data-filter]')];
 const cards = [...document.querySelectorAll('.project-card')];
 const showAll = document.getElementById('show-all');
